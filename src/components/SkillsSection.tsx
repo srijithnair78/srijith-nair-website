@@ -4,35 +4,35 @@ import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'FRONTEND ARCHITECTURE',
+    title: 'TALENT & SUCCESSION ARCHITECTURE',
     badge: 'CORE PILLAR',
-    items: ['React.js', 'React Native', 'Tailwind CSS', 'Electron.js'],
-    description: 'Specialized in building high-performance client applications, custom component libraries, and immersive desktop/mobile interfaces.',
-    stat: '100% RESPONSIVE',
+    items: ['9-Box Grid', 'Bench-Strength', 'C-Suite Succession', 'HIPO Development', 'Career Pathing'],
+    description: 'Designing enterprise-wide talent and succession frameworks with readiness analytics and predictive bench-strength modelling — ensuring uninterrupted leadership continuity across critical roles.',
+    stat: '100% COMPLIANCE',
     colSpan: 'lg:col-span-7',
   },
   {
-    title: 'DISTRIBUTED BACKEND',
-    badge: 'HIGH CONCURRENCY',
-    items: ['Node.js', 'Express.js', 'Spring Boot', 'Docker', 'Redis'],
-    description: 'Engineered RESTful APIs, JWT role-based access control, caching layers, and multi-tenant SaaS backend isolation.',
-    stat: '< 40ms LATENCY',
+    title: 'AI-POWERED HR INNOVATION',
+    badge: 'PRACTITIONER-INNOVATOR',
+    items: ['LLM Automation', 'AI Agents', 'Predictive Analytics', 'Intelligent Dashboards', 'RAG / LangChain'],
+    description: 'The only HR leader in the region personally architecting 10+ AI agents that automate, predict, and personalise the people function at scale.',
+    stat: '10+ AI AGENTS',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'DATA PLATFORMS',
-    badge: 'PERSISTENCE',
-    items: ['MongoDB Atlas', 'PostgreSQL', 'MySQL'],
-    description: 'Designing resilient relational and document schemas with optimized indexing and transaction isolation.',
-    stat: 'ACID & NOSQL',
+    title: 'GCC REGULATORY FLUENCY',
+    badge: 'COMPLIANCE',
+    items: ['Saudization / Nitaqat', 'Emiratization', 'GOSI', 'CBUAE', 'Vision 2030'],
+    description: 'Deep command of GCC workforce regulation — steering nationalisation strategy and governance alignment across KSA and the UAE.',
+    stat: 'MULTI-MARKET',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'ALGORITHMS & MACHINE LEARNING',
-    badge: 'INTELLIGENCE',
-    items: ['C++', 'Python', 'Java', 'scikit-learn', 'OpenAI API'],
-    description: '1200+ algorithm problems solved. Applied Random Forest classifiers for real-time risk heatmaps and NLP policy analyzers.',
-    stat: '1200+ SOLVED',
+    title: 'COMPENSATION & REWARDS STRATEGY',
+    badge: 'TOTAL REWARDS',
+    items: ['Korn Ferry Grading', 'Market Benchmarking', 'Pay Equity', 'Total Rewards', 'GCC Comp Norms'],
+    description: 'Architecting competitive, equitable compensation structures using market data — ensuring pay positioning and equity across bands and business units.',
+    stat: 'PAY EQUITY',
     colSpan: 'lg:col-span-7',
   },
 ];
@@ -87,7 +87,7 @@ export const SkillsSection: React.FC = () => {
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            03 / TECH MATRIX
+            03 / COMPETENCY MATRIX
           </span>
           <div className="w-20 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
         </motion.div>
