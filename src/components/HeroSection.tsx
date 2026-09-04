@@ -173,17 +173,17 @@ export const HeroSection: React.FC = () => {
               >
                 {/* Line 1: I BUILD */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-                  I BUILD
+                  I ARCHITECT
                 </span>
 
                 {/* Line 2: DIGITAL */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                  DIGITAL
+                  HUMAN
                 </span>
 
                 {/* Line 3: EXPERIENCES */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  EXPERIENCES
+                  CAPITAL
                 </span>
               </h1>
             </motion.div>
@@ -205,9 +205,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-               Transforming Human Capital through strategy, intelligence and AI.
+                Transforming the people function through strategy, intelligence and AI.
                 <br />
-                27+ years of Human Capital leadership across the GCC and India, advising CEOs and Boards on talent, succession, workforce strategy and AI-powered HR transformation.
+                27+ years of Human Capital leadership across the GCC and India — advising CEOs and Boards on talent, succession, workforce strategy, and AI-powered HR transformation, with direct accountability for workforces of 25,000+.
               </p>
             </motion.div>
 
@@ -267,7 +267,7 @@ export const HeroSection: React.FC = () => {
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
+              <p>PEOPLE ARE MY CRAFT.</p>
               <p>IMPACT IS MY GOAL.</p>
             </div>
 
@@ -282,7 +282,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Srijith
             </div>
           </motion.div>
         </div>
