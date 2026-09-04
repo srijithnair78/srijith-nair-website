@@ -15,97 +15,88 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    title: 'PolicyGuard AI',
-    category: 'AI / LEGAL-TECH PLATFORM',
+    title: 'In-House AI Agent Suite',
+    category: 'AI / HR TECH INNOVATION',
     description:
-      'AI-powered platform engineered for automated privacy policy analysis and legal contract auditing across web, desktop, and mobile. Implements NLP extraction, real-time risk alert detection, and generative risk score intelligence.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Engineered 10+ custom AI agents built entirely in-house at zero external cost, including an organisation-wide employee engagement agent that captures real-time sentiment and surfaces actionable people insights — reducing dependence on third-party vendors and accelerating HR\u2019s digital transformation.',
+    githubUrl: 'https://www.linkedin.com/in/srijithnair',
     tech: [
-      'React.js',
-      'React Native',
-      'Electron.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB Atlas',
-      'OpenAI API',
-      'Prompt Eng',
-      'NLP',
-      'Docker',
-      'JWT',
+      'LLMs',
+      'Prompt Engineering',
+      'Sentiment Analysis',
+      'Predictive Analytics',
+      'People Intelligence',
+      'Automation',
+      'RAG',
+      'LangChain',
     ],
     metrics: [
-      { label: 'PLATFORMS', value: 'Web, Mobile, Desktop' },
-      { label: 'ENGINE', value: 'OpenAI NLP / GPT' },
-      { label: 'PIPELINE', value: 'Automated Scoring' },
+      { label: 'AGENTS', value: '10+ Deployed' },
+      { label: 'COST', value: 'Zero External' },
+      { label: 'FOCUS', value: 'Sentiment & Insight' },
     ],
   },
   {
     number: '02',
-    title: 'Software Release Risk Heatmap',
-    category: 'MACHINE LEARNING / DEV PLATFORM',
+    title: 'Succession Architecture',
+    category: 'TALENT & SUCCESSION',
     description:
-      'Full-stack predictive release management platform utilizing Machine Learning. Implements a trained Random Forest classifier to categorize release stability from Low to Critical risk, rendered over a live interactive team heatmap.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Led enterprise-wide C-suite and critical-role succession planning using 9-box grids, readiness analytics, and predictive bench-strength modelling, aligned to the Group\u2019s 2030 growth trajectory. Achieved 100% Board, CEO, and N-1 succession compliance across critical roles.',
+    githubUrl: 'https://www.linkedin.com/in/srijithnair',
     tech: [
-      'React.js',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'scikit-learn',
-      'PostgreSQL',
-      'Tailwind CSS',
-      'REST APIs',
-      'JWT',
+      '9-Box Grid',
+      'Bench-Strength Modelling',
+      'Readiness Analytics',
+      'HIPO Identification',
+      'C-Suite Succession',
+      'Board Governance',
     ],
     metrics: [
-      { label: 'MODEL', value: 'Random Forest' },
-      { label: 'ACCURACY', value: 'High Precision' },
-      { label: 'DASHBOARD', value: 'Live Risk Heatmap' },
+      { label: 'COMPLIANCE', value: '100% Board / CEO / N-1' },
+      { label: 'HORIZON', value: '2030 Growth Aligned' },
+      { label: 'METHOD', value: 'Predictive Bench' },
     ],
   },
   {
     number: '03',
-    title: 'Multi-Tenant SaaS Platform',
-    category: 'CLOUD / DISTRIBUTED SYSTEM',
+    title: 'Talent Intelligence Ecosystem',
+    category: 'HR ANALYTICS & PEOPLE INTELLIGENCE',
     description:
-      'Enterprise-grade multi-tenant platform built for unified management of teams, projects, and execution lifecycles. Architected with strict tenant data isolation, granular Role-Based Access Control (RBAC), and containerized deployments.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Established a centralised Talent Intelligence ecosystem providing the CHRO and Board with real-time dashboards on leadership performance, flight-risk indicators, and readiness gaps — translating people data into strategic governance insights that enable informed decision-making at the highest level.',
+    githubUrl: 'https://www.linkedin.com/in/srijithnair',
     tech: [
-      'Node.js',
-      'Express.js',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'JWT',
-      'RBAC',
-      'REST APIs',
+      'Real-Time Dashboards',
+      'Flight-Risk Analytics',
+      'Leadership Metrics',
+      'Readiness Gaps',
+      'Board Reporting',
+      'HRIS Integration',
     ],
     metrics: [
-      { label: 'ARCHITECTURE', value: 'Multi-Tenant' },
-      { label: 'SECURITY', value: 'RBAC Isolation' },
-      { label: 'CONTAINERS', value: 'Docker Compose' },
+      { label: 'AUDIENCE', value: 'CHRO & Board' },
+      { label: 'SIGNALS', value: 'Flight-Risk & Readiness' },
+      { label: 'MODE', value: 'Real-Time' },
     ],
   },
   {
     number: '04',
-    title: 'Payment Gateway with Hosted Checkout',
-    category: 'FINTECH / PAYMENT SYSTEMS',
+    title: 'Digital Learning Transformation',
+    category: 'LEARNING & OD',
     description:
-      'End-to-end hosted payment gateway infrastructure supporting seamless merchant order generation, multi-currency processing, and secure consumer checkout via UPI and Cards with webhook transaction verification.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Launched a skills taxonomy framework built on structured skills-gap analysis across critical roles, integrated AI coaching capabilities, and deployed a digital learning ecosystem that optimised learning costs by 1 million SAR while expanding reach and personalisation across the Group.',
+    githubUrl: 'https://www.linkedin.com/in/srijithnair',
     tech: [
-      'Node.js',
-      'Spring Boot',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'REST APIs',
-      'UPI / Card Integrations',
+      'Skills Taxonomy',
+      'Skills-Gap Analysis',
+      'AI Coaching',
+      'Digital Learning',
+      'Capability Building',
+      'Personalisation',
     ],
     metrics: [
-      { label: 'PROTOCOLS', value: 'UPI & Cards' },
-      { label: 'BACKEND', value: 'Spring Boot + Node' },
-      { label: 'DATABASE', value: 'ACID PostgreSQL' },
+      { label: 'SAVINGS', value: '1M+ SAR' },
+      { label: 'REACH', value: 'Group-Wide' },
+      { label: 'MODEL', value: 'AI-Personalised' },
     ],
   },
 ];
@@ -163,7 +154,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Scroll down to unfold the system architecture cards. Each platform was built to solve complex operational challenges.
+            Scroll down to unfold each initiative. Every programme was built to solve a real people, talent, or transformation challenge at scale.
           </p>
         </motion.div>
 
@@ -271,7 +262,7 @@ export const ProjectsSection: React.FC = () => {
                       className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#8C6D4F] bg-[#16120E] hover:border-[#D4AF37] hover:bg-[#D4AF37] text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.1)]"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                      <span>VIEW ON GITHUB</span>
+                      <span>VIEW ON LINKEDIN</span>
                       <span className="text-xs">↗</span>
                     </a>
                   </div>
