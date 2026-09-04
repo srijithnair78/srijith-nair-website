@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
                 className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
+                Exploring a board advisory role, a keynote, a leadership programme, or an AI-in-HR collaboration? Send a direct message below and let\u2019s start the conversation.
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export const ContactSection: React.FC = () => {
         {/* System Footer Line */}
         <div className="pt-16 mt-16 border-t border-[#8C6D4F]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
           <span className="text-[10px] font-mono tracking-widest text-[#8C6D4F] uppercase">
-            PORTFOLIO // EDITION 2026
+            SRIJITH NAIR // EDITION 2026
           </span>
           <span className="text-[10px] font-mono text-[#8C6D4F]">
             © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
