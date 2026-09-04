@@ -120,10 +120,10 @@ export const AboutSection: React.FC = () => {
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_10px_rgba(0,0,0,0.85)]">
-                  I DON'T JUST WRITE CODE.
+                  I DON'T JUST MANAGE PEOPLE.
                 </span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.3)]">
-                  I BUILD WHAT'S NEXT.
+                  I ARCHITECT WHAT'S NEXT.
                 </span>
               </h2>
             </motion.div>
@@ -134,7 +134,7 @@ export const AboutSection: React.FC = () => {
               className="text-xs sm:text-sm md:text-[14.5px] font-light text-[#B3A497] leading-[1.85] tracking-wide mb-10 max-w-xl"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              I'm <span className="text-[#F3DBB3] font-medium">Damisetti Shamya Lohitha</span>, a Full Stack Developer and Data Science student specializing in building scalable web architectures, AI-integrated platforms, and refined digital experiences. With a strong algorithmic foundation and a focus on clean engineering, I turn complex requirements into impactful products.
+              I'm <span className="text-[#F3DBB3] font-medium">Srijith Nair</span>, a board advisory member, doctoral researcher, and transformational Senior HR Leader with 27+ years of full-spectrum Human Capital leadership across the GCC and India. I architect people strategies that deliver measurable competitive advantage — spanning talent and succession frameworks, compensation architecture, and regulatory compliance. As a rare practitioner-innovator, I've personally built 10+ AI agents that automate, predict, and personalise the people function at scale.
             </motion.p>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
@@ -148,10 +148,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  1200+
+                  27+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  DSA Solved
+                  Years of HR Leadership
                 </span>
               </div>
 
@@ -161,10 +161,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  9.07
+                  39%
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  B.Tech CGPA
+                  Retention Improvement
                 </span>
               </div>
 
@@ -174,10 +174,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  40+
+                  10+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Industry-Grade Projects
+                  AI Agents Deployed
                 </span>
               </div>
 
@@ -187,10 +187,10 @@ export const AboutSection: React.FC = () => {
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
-                  Top 100
+                  25K+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Myntra Hackerramp
+                  Workforce Impacted
                 </span>
               </div>
             </motion.div>
@@ -263,7 +263,7 @@ export const AboutSection: React.FC = () => {
                 {/* Main Portrait */}
                 <img
                   src={aboutImg}
-                  alt="Damisetti Shamya Lohitha"
+                  alt="Srijith Nair"
                   className="w-full h-full object-cover object-top filter brightness-[0.94] contrast-[1.06] saturate-[1.02] group-hover:brightness-105 group-hover:contrast-[1.12] transition-all duration-700 ease-out"
                 />
 
@@ -285,7 +285,7 @@ export const AboutSection: React.FC = () => {
                     className="text-3xl text-[#F2D8A7] drop-shadow-[0_0_12px_rgba(242,216,167,0.5)] transition-colors duration-300 group-hover:text-white"
                     style={{ fontFamily: "'Herr Von Muellerhoff', cursive" }}
                   >
-                    Lohitha
+                    Srijith
                   </span>
                 </div>
               </div>
