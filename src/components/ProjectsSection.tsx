@@ -19,7 +19,7 @@ const projects: Project[] = [
     category: 'AI / HR TECH INNOVATION',
     description:
       'Engineered 10+ custom AI agents built entirely in-house at zero external cost, including an organisation-wide employee engagement agent that captures real-time sentiment and surfaces actionable people insights — reducing dependence on third-party vendors and accelerating HR\u2019s digital transformation.',
-    githubUrl: 'https://www.linkedin.com/in/srijithnair',
+    githubUrl: 'https://www.linkedin.com/in/srijith-nair-5036b812/',
     tech: [
       'LLMs',
       'Prompt Engineering',
