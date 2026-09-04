@@ -118,7 +118,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            LOHITHA.
+            SRIJITH NAIR.
           </a>
 
           {/* Navigation Links */}
@@ -194,7 +194,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                SENIOR HR LEADER <span className="text-[#8C6D4F] mx-1">•</span> AI-DRIVEN HUMAN CAPITAL STRATEGIST <span className="text-[#8C6D4F] mx-1">•</span>
               </p>
             </motion.div>
 
@@ -205,9 +205,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+               Transforming Human Capital through strategy, intelligence and AI.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                27+ years of Human Capital leadership across the GCC and India, advising CEOs and Boards on talent, succession, workforce strategy and AI-powered HR transformation.
               </p>
             </motion.div>
 
@@ -242,7 +242,7 @@ export const HeroSection: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 className="relative inline-flex items-center space-x-2 px-6 sm:px-7 py-3.5 border border-[#8C6D4F]/40 hover:border-[#8C6D4F] text-[#BFA895] hover:text-[#EAD8C7] text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300"
               >
-                <span>DOWNLOAD RESUME</span>
+                <span>DOWNLOAD PROFILE</span>
                 <span className="transform transition-transform duration-300 group-hover:translate-y-0.5 text-xs">
                   ↓
                 </span>
