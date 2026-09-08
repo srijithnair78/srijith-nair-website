@@ -52,17 +52,34 @@ export const EducationSection: React.FC = () => {
           className="relative mb-20 p-8 md:p-10 border border-[#D4AF37]/30 bg-gradient-to-br from-[#161210] to-[#0B0908] overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/60 to-transparent" />
-          <p className="text-[11px] tracking-[0.35em] uppercase text-[#8C6D4F] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            06 / DOCTORAL RESEARCH
-          </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95] tracking-tight mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
-              DOCTORAL RESEARCHER IN AI &amp; WORKFORCE STRATEGY
-            </span>
-          </h2>
-          <p className="text-sm md:text-[15px] text-[#A8988B] leading-[1.85] tracking-wide max-w-3xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            At ESGCI Paris Business School (2027), building an evidence-based framework for AI integration in human capital management — bridging rigorous academic research with board-level HR practice.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+            {/* Text */}
+            <div>
+              <p className="text-[11px] tracking-[0.35em] uppercase text-[#8C6D4F] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                06 / DOCTORAL RESEARCH
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95] tracking-tight mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
+                  DOCTORAL RESEARCHER IN AI &amp; WORKFORCE STRATEGY
+                </span>
+              </h2>
+              <p className="text-sm md:text-[15px] text-[#A8988B] leading-[1.85] tracking-wide" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                At ESGCI Paris Business School (2027), building an evidence-based framework for AI integration in human capital management — bridging rigorous academic research with board-level HR practice.
+              </p>
+            </div>
+            {/* Photo */}
+            <div className="relative">
+              <div className="absolute -inset-3 bg-gradient-to-bl from-[#C99E5D]/20 to-transparent blur-2xl pointer-events-none" />
+              <div className="relative overflow-hidden border border-[#8C6D4F]/40">
+                <img
+                  src="/images/doctoral.jpg"
+                  alt="Srijith Nair - doctoral research"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Education */}
