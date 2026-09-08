@@ -2,76 +2,110 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+const EMAIL = 'srijithnairdba@gmail.com';
+const PHONE_KSA = '+966 533 953 928';
+const PHONE_UAE = '+971 505 407 108';
+const LOCATION = 'Saudi Arabia';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/srijith-nair-5036b812/';
+
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    const subject = encodeURIComponent('Website enquiry from ' + (formData.name || 'a visitor'));
+    const body = encodeURIComponent(
+      formData.message + '\n\n---\nFrom: ' + formData.name + '\nEmail: ' + formData.email
+    );
+    window.location.href = 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
   };
 
   return (
     <footer
       id="contact"
-      className="relative w-full bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
+      className="relative w-full bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black pt-24 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        
-        {/* Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
-          {/* Left Column (5 Cols) */}
-          <div className="lg:col-span-5 flex flex-col justify-between">
-            <div>
-              {/* Eyebrow Header */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="flex items-center space-x-4 mb-5"
-              >
-                <span
-                  className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
-                  05 / CONTACT
-                </span>
-                <div className="w-16 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
-              </motion.div>
 
-              {/* Headline */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="mb-8"
-              >
-                <h2
-                  className="text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none"
-                  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
-                >
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-                    INITIALIZE
-                  </span>
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                    TRANSMISSION.
-                  </span>
-                </h2>
-              </motion.div>
-
-              <p
-                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
+          {/* Left column: heading + contact details */}
+          <div className="lg:col-span-5 flex flex-col">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="flex items-center space-x-4 mb-5"
+            >
+              <span
+                className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Exploring a board advisory role, a keynote, a leadership programme, or an AI-in-HR collaboration? Send a direct message below and let\u2019s start the conversation.
-              </p>
-            </div>
+                07 / CONTACT
+              </span>
+              <div className="w-16 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
+            </motion.div>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-5xl sm:text-6xl md:text-7xl tracking-tight uppercase leading-[0.85] select-none mb-8"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                LET&apos;S
+              </span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
+                GET IN TOUCH
+              </span>
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-sm font-light text-[#A8988B] leading-relaxed max-w-md mb-10"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              Exploring a board advisory role, a keynote, a leadership programme, or an AI-in-HR collaboration? Reach out directly and let&apos;s start the conversation.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-4"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              <a href={'mailto:' + EMAIL} className="group flex items-center gap-3 text-sm text-[#C4B29E] hover:text-[#F7E7C4] transition-colors">
+                <span className="text-[#D4AF37]">&#9993;</span>
+                {EMAIL}
+              </a>
+              <a href={'tel:' + PHONE_KSA.replace(/\s/g, '')} className="group flex items-center gap-3 text-sm text-[#C4B29E] hover:text-[#F7E7C4] transition-colors">
+                <span className="text-[#D4AF37]">&#9742;</span>
+                {PHONE_KSA} <span className="text-[#8C6D4F] text-xs">(KSA)</span>
+              </a>
+              <a href={'tel:' + PHONE_UAE.replace(/\s/g, '')} className="group flex items-center gap-3 text-sm text-[#C4B29E] hover:text-[#F7E7C4] transition-colors">
+                <span className="text-[#D4AF37]">&#9742;</span>
+                {PHONE_UAE} <span className="text-[#8C6D4F] text-xs">(UAE)</span>
+              </a>
+              <div className="flex items-center gap-3 text-sm text-[#C4B29E]">
+                <span className="text-[#D4AF37]">&#9678;</span>
+                {LOCATION}
+              </div>
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 text-sm text-[#C4B29E] hover:text-[#F7E7C4] transition-colors">
+                <span className="text-[#D4AF37] font-semibold">in</span>
+                Connect on LinkedIn
+                <span className="transition-transform duration-300 group-hover:translate-x-1">&#8599;</span>
+              </a>
+            </motion.div>
           </div>
 
-          {/* Right Column: Monolith Terminal Form (7 Cols) */}
+          {/* Right column: clean message form */}
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,101 +113,85 @@ export const ContactSection: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 relative w-full rounded-sm border border-[#8C6D4F]/40 bg-[#0A0806] p-8 sm:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.9)] overflow-hidden"
           >
-            {/* Top Gold Horizon Edge */}
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent" />
-            
-            {/* Precision Corner Crosshairs */}
-            <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#D4AF37]/60" />
-            <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#D4AF37]/60" />
-            <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#D4AF37]/60" />
-            <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#D4AF37]/60" />
 
-            {sent ? (
-              <div className="py-16 text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-[#D4AF37] text-[#D4AF37] text-sm">
-                  ✓
-                </div>
-                <h3 className="text-3xl text-white font-normal uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                  PACKET DELIVERED
-                </h3>
-                <p className="text-xs text-[#A8988B] font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  Transmission registered successfully.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                      // SENDER
-                    </span>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Enter name"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    />
-                  </div>
+            <h3
+              className="text-2xl text-[#F3DBB3] mb-6"
+              style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.05em' }}
+            >
+              Send a message
+            </h3>
 
-                  <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                      // CHANNEL
-                    </span>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="Enter email"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    />
-                  </div>
-                </div>
-
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                    // PAYLOAD
-                  </span>
-                  <textarea
+                  <label className="block text-[11px] tracking-[0.16em] uppercase text-[#8C6D4F] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Name
+                  </label>
+                  <input
+                    type="text"
                     required
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Enter transmission payload..."
-                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 p-4 outline-none rounded-sm transition-colors resize-none"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="Your name"
+                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-sm text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   />
                 </div>
+                <div>
+                  <label className="block text-[11px] tracking-[0.16em] uppercase text-[#8C6D4F] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="you@example.com"
+                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-sm text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
+                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  />
+                </div>
+              </div>
 
-                <button
-                  type="submit"
-                  className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+              <div>
+                <label className="block text-[11px] tracking-[0.16em] uppercase text-[#8C6D4F] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  Message
+                </label>
+                <textarea
+                  required
+                  rows={5}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="How can I help?"
+                  className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-sm text-white placeholder-[#8C6D4F]/50 p-4 outline-none rounded-sm transition-colors resize-none"
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
-                  EXECUTE DISPATCH ↗
-                </button>
+                />
+              </div>
 
-              </form>
-            )}
+              <button
+                type="submit"
+                className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Send message &#8599;
+              </button>
+
+              <p className="text-[11px] text-[#8C6D4F] text-center pt-1" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                This opens your email app with the message ready to send.
+              </p>
+            </form>
           </motion.div>
-
         </div>
 
-        {/* System Footer Line */}
         <div className="pt-16 mt-16 border-t border-[#8C6D4F]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
-          <span className="text-[10px] font-mono tracking-widest text-[#8C6D4F] uppercase">
-            SRIJITH NAIR // EDITION 2026
+          <span className="text-[10px] tracking-widest text-[#8C6D4F] uppercase" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            Srijith Nair
           </span>
-          <span className="text-[10px] font-mono text-[#8C6D4F]">
-            © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
+          <span className="text-[10px] text-[#8C6D4F]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            &copy; {new Date().getFullYear()} Srijith Nair. All rights reserved.
           </span>
         </div>
-
       </div>
     </footer>
   );
