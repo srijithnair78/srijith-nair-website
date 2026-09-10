@@ -30,6 +30,7 @@ const fadeUpVariants: Variants = {
 const navItems = [
   { name: 'ABOUT', href: '#about' },
   { name: 'MEDIA', href: '#media' },
+  { name: 'SPEAKING', href: '#keynote' },
   { name: 'AI AGENTS', href: '#ai-builder' },
   { name: 'BOOK', href: '#author' },
   { name: 'EXPERIENCE', href: '#experience' },
