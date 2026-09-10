@@ -43,7 +43,7 @@ export const AuthorSection: React.FC = () => {
           transition={{ duration: 0.9 }}
         >
           <p className="text-[11px] tracking-[0.35em] uppercase text-[#8C6D4F] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            05 / AUTHOR
+            07 / AUTHOR
           </p>
           <h2 className="text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.9] tracking-tight mb-3" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
