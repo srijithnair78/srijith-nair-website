@@ -172,19 +172,19 @@ export const HeroSection: React.FC = () => {
                 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] xl:text-[7.8rem] tracking-tight uppercase leading-[0.83]"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
-                {/* Line 1: I BUILD */}
+                {/* Line 1: I LEAD */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-                  I ARCHITECT
+                  I LEAD
                 </span>
 
-                {/* Line 2: DIGITAL */}
+                {/* Line 2: HUMAN CAPITAL */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                  HUMAN
+                  HUMAN CAPITAL
                 </span>
 
-                {/* Line 3: EXPERIENCES */}
+                {/* Line 3: INTO THE AI ERA */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  CAPITAL
+                  INTO THE AI ERA
                 </span>
               </h1>
             </motion.div>
