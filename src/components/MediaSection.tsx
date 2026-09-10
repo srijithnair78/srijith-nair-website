@@ -54,12 +54,22 @@ export const MediaSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             whileHover={{ y: -4 }}
-            className="group relative flex flex-col justify-between p-8 border border-[#8C6D4F]/30 bg-gradient-to-br from-[#141110] to-[#0C0A09] hover:border-[#D4AF37]/60 transition-all duration-400 overflow-hidden"
+            className="group relative flex flex-col border border-[#8C6D4F]/30 bg-gradient-to-br from-[#141110] to-[#0C0A09] hover:border-[#D4AF37]/60 transition-all duration-400 overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent" />
-            <div>
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent z-10" />
+
+            {/* Photo */}
+            <div className="relative w-full aspect-[16/9] overflow-hidden bg-[#0C0A08]">
+              <img
+                src="/images/youtube.jpg"
+                alt="TheSNStudioLive YouTube channel"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C0A09] via-transparent to-transparent" />
+            </div>
+
+            <div className="p-8 flex flex-col flex-grow">
               <div className="flex items-center gap-4 mb-6">
-                {/* YouTube glyph */}
                 <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#FF0000]/90 shadow-[0_0_25px_rgba(255,0,0,0.35)]">
                   <svg viewBox="0 0 24 24" className="w-8 h-8 fill-white">
                     <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z" />
@@ -74,14 +84,14 @@ export const MediaSection: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-[#A8988B] leading-relaxed max-w-md" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <p className="text-sm text-[#A8988B] leading-relaxed max-w-md flex-grow" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 Candid conversations and sharp commentary on AI in HR, leadership, careers, and the changing shape of work. New thinking, published regularly.
               </p>
+              <span className="mt-8 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-[#EAD8C7] group-hover:text-[#FFF5EB]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                Watch the channel
+                <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+              </span>
             </div>
-            <span className="mt-8 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-[#EAD8C7] group-hover:text-[#FFF5EB]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              Watch the channel
-              <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
-            </span>
           </motion.a>
 
           {/* LinkedIn card */}
@@ -94,10 +104,21 @@ export const MediaSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
             whileHover={{ y: -4 }}
-            className="group relative flex flex-col justify-between p-8 border border-[#8C6D4F]/30 bg-gradient-to-br from-[#141110] to-[#0C0A09] hover:border-[#D4AF37]/60 transition-all duration-400 overflow-hidden"
+            className="group relative flex flex-col border border-[#8C6D4F]/30 bg-gradient-to-br from-[#141110] to-[#0C0A09] hover:border-[#D4AF37]/60 transition-all duration-400 overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent" />
-            <div>
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E8D7C5]/40 to-transparent z-10" />
+
+            {/* Photo */}
+            <div className="relative w-full aspect-[16/9] overflow-hidden bg-[#0C0A08]">
+              <img
+                src="/images/linkedin.jpg"
+                alt="Srijith Nair on LinkedIn"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C0A09] via-transparent to-transparent" />
+            </div>
+
+            <div className="p-8 flex flex-col flex-grow">
               <div className="flex items-center gap-4 mb-6">
                 <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#0A66C2] shadow-[0_0_25px_rgba(10,102,194,0.35)]">
                   <svg viewBox="0 0 24 24" className="w-7 h-7 fill-white">
@@ -113,14 +134,14 @@ export const MediaSection: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-[#A8988B] leading-relaxed max-w-md" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <p className="text-sm text-[#A8988B] leading-relaxed max-w-md flex-grow" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 Thought leadership on AI-powered HR, succession, and GCC talent strategy — including live demonstrations of the AI agents built in-house.
               </p>
+              <span className="mt-8 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-[#EAD8C7] group-hover:text-[#FFF5EB]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                Connect on LinkedIn
+                <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+              </span>
             </div>
-            <span className="mt-8 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-[#EAD8C7] group-hover:text-[#FFF5EB]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              Connect on LinkedIn
-              <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
-            </span>
           </motion.a>
         </div>
       </div>
