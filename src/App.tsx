@@ -3,6 +3,8 @@ import { AboutSection } from './components/AboutSection';
 import { MediaSection } from './components/MediaSection';
 import { FacilitatorSection } from './components/FacilitatorSection';
 import { FacultySection } from './components/FacultySection';
+import { KeynoteSection } from './components/KeynoteSection';
+import { AITrainingSection } from './components/AITrainingSection';
 import { AIBuilderSection } from './components/AIBuilderSection';
 import { AuthorSection } from './components/AuthorSection';
 import { ProjectsSection } from './components/ProjectsSection';
@@ -20,6 +22,8 @@ function App() {
       <MediaSection />
       <FacilitatorSection />
       <FacultySection />
+      <KeynoteSection />
+      <AITrainingSection />
       <AIBuilderSection />
       <AuthorSection />
       <ProjectsSection />
