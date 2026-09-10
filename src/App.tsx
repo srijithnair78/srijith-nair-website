@@ -10,6 +10,7 @@ import { SkillsSection } from './components/SkillsSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { EducationSection } from './components/EducationSection';
 import { ContactSection } from './components/ContactSection';
+import { DigitalTwinWidget } from './components/DigitalTwinWidget';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <ExperienceSection />
       <EducationSection />
       <ContactSection />
+      <DigitalTwinWidget />
     </div>
   );
 }
