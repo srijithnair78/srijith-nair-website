@@ -22,6 +22,12 @@ const certGroups = [
     ],
   },
   {
+    group: 'Governance & Board Advisory',
+    items: [
+      'Certified Board Advisor — PwC',
+    ],
+  },
+  {
     group: 'Psychometric, Assessment & Coaching',
     items: [
       'Hogan Assessment — Hogan Institute',
@@ -56,7 +62,7 @@ export const EducationSection: React.FC = () => {
             {/* Text */}
             <div>
               <p className="text-[11px] tracking-[0.35em] uppercase text-[#8C6D4F] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                06 / DOCTORAL RESEARCH
+                08 / DOCTORAL RESEARCH
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.95] tracking-tight mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
                 <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A]">
