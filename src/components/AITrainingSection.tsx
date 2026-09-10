@@ -61,11 +61,11 @@ export const AITrainingSection: React.FC = () => {
           className="relative order-first lg:order-none"
         >
           <div className="absolute -inset-3 bg-gradient-to-bl from-[#C99E5D]/20 to-transparent blur-2xl pointer-events-none" />
-          <div className="relative overflow-hidden border border-[#8C6D4F]/40">
+          <div className="relative overflow-hidden border border-[#8C6D4F]/40 bg-[#0C0A08]">
             <img
               src="/images/ai-training.jpg"
               alt="Srijith Nair training and mentoring on AI"
-              className="w-full h-full object-cover aspect-[4/5]"
+              className="w-full h-full object-contain aspect-[3/2]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           </div>
