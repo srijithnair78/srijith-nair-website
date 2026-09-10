@@ -87,7 +87,7 @@ const GREETING: Message = {
   id: 'greeting',
   role: 'twin',
   text:
-    "Hi, I'm an AI assistant trained on Srijith's professional background \u2014 think of me as a quick way to explore his work. I can only answer from what's on this site. Pick a question below:",
+    "Hello, I am Srijith's Digital Twin. What would you like to know more about me?",
   suggestions: TOPICS.map((t) => t.id),
 };
 
@@ -132,14 +132,14 @@ export const DigitalTwinWidget: React.FC = () => {
         whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.95 }}
         className="fixed bottom-6 right-6 z-[60] flex items-center gap-3 pl-4 pr-5 py-3.5 rounded-full border border-[#D4AF37]/50 bg-gradient-to-br from-[#1A1512] to-[#0C0A08] shadow-[0_8px_30px_rgba(0,0,0,0.6),0_0_25px_rgba(212,175,55,0.15)] hover:border-[#D4AF37] transition-colors duration-300"
-        aria-label="Chat with Srijith's AI assistant"
+        aria-label="Chat with Srijith's Digital Twin"
       >
         <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] text-[11px] font-semibold text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
           SN
           <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-[#4ADE80] border-2 border-[#0C0A08]" />
         </span>
         <span className="text-[11px] tracking-[0.14em] uppercase text-[#EAD8C7] hidden sm:inline" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-          {isOpen ? 'Close' : "Ask Srijith's AI"}
+          {isOpen ? 'Close' : "Ask Srijith's Twin"}
         </span>
       </motion.button>
 
@@ -161,10 +161,10 @@ export const DigitalTwinWidget: React.FC = () => {
                 </span>
                 <div>
                   <p className="text-[13px] text-[#F3DBB3] leading-tight" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 600 }}>
-                    Srijith&apos;s AI Assistant
+                    Srijith&apos;s Digital Twin
                   </p>
                   <p className="text-[10px] text-[#8C6D4F] leading-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                    Scripted &middot; professional topics only
+                    Online now
                   </p>
                 </div>
               </div>
