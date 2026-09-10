@@ -52,7 +52,7 @@ export const AIBuilderSection: React.FC = () => {
           className="text-[11px] tracking-[0.35em] uppercase text-[#8C6D4F] mb-4"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
-          04 / AI BUILDER
+          06 / AI BUILDER
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
