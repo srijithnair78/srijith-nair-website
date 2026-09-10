@@ -63,7 +63,7 @@ export const MediaSection: React.FC = () => {
               <img
                 src="/images/youtube.jpg"
                 alt="TheSNStudioLive YouTube channel"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0C0A09] via-transparent to-transparent" />
             </div>
@@ -113,7 +113,7 @@ export const MediaSection: React.FC = () => {
               <img
                 src="/images/linkedin.jpg"
                 alt="Srijith Nair on LinkedIn"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0C0A09] via-transparent to-transparent" />
             </div>
