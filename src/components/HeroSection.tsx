@@ -277,13 +277,13 @@ export const HeroSection: React.FC = () => {
 
             {/* 4. Fine Monoline Calligraphy Signature */}
             <div 
-              className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5"
+              className="text-[3.4rem] xl:text-[3.8rem] text-[#D8AB64] font-normal leading-none -ml-0.5 whitespace-nowrap drop-shadow-[0_2px_10px_rgba(216,171,100,0.25)]"
               style={{ 
                 fontFamily: "'Herr Von Muellerhoff', 'Allura', cursive",
-                letterSpacing: '0.04em',
+                letterSpacing: '0.03em',
               }}
             >
-              Srijith
+              Srijith Nair
             </div>
           </motion.div>
         </div>
